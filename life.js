@@ -60,7 +60,7 @@ class Life {
     
     step() {
         const newGrid = new Uint8Array(this.grid);
-        for (const [index, lifenumber] of [...newGrid].entries()) {
+        for (const [index, lifeNumber] of [...newGrid].entries()) {
             const neighbors = this.getGridCellNeighborIndexes(index);
             let aliveNeighbors = 0;
             for (const neighbor of neighbors) {
