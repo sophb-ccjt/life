@@ -70,8 +70,13 @@ class Life {
             if (lifeNumber === 0) {
                 if (aliveNeighbors === 3) newGrid[index] = 1;
             } else if (lifeNumber === 1) {
-                if (aliveNeighbors ) newGrid[index] = 1;
+                if (
+                    aliveNeighbors === 2 ||
+                    aliveNeighbors === 3
+                ) newGrid[index] = 1;
+                else newGrid[index] = 1;
             }
         }
+        this.grid = newGrid;
     }
 }
