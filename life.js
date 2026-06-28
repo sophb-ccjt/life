@@ -82,3 +82,15 @@ class Life {
         this.grid = newGrid;
     }
 }
+/*function displayLife(life) {
+    const lines = [];
+    for (let y = 0; y < life.height; y++) {
+        let lineStr = '';
+        for (let x = 0; x < life.width; x++) {
+            if (life.grid[life.xyToIndex(x,y)] === 1)
+                lineStr += '.';
+            else lineStr += '';
+        }
+    }
+    console.log(lines.join('\n'));
+} */
