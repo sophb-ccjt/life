@@ -15,9 +15,11 @@ class Life {
 
     #disambiguateLocation(...location) {
         let x, y;
-        if (location.length === 1) 
-            ({x, y}) = this.indexToXY(location[0]);
-        else [x, y] = location;
+        if (location.length === 1) {
+            const xy = this.indexToXY(location[0]);
+            x = xy.x;
+            y = xy.y;
+        } else [x, y] = location;
 
         return {x, y};
     }
